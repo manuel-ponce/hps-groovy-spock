@@ -1,5 +1,5 @@
 # hps-groovy-spock
-[![Build Status](https://travis-ci.org/hiptest/hps-groovy-spock.svg?branch=master)](https://travis-ci.org/hiptest/hps-groovy-spock)
+[![Build Status](https://travis-ci.org/manuel-ponce/hps-groovy-spock.svg?branch=master)](https://travis-ci.org/manuel-ponce/hps-groovy-spock)
 
 Hiptest publisher samples with Groovy/Spock
 
