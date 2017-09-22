@@ -5,21 +5,10 @@ class SupportInternationalisationSpec extends Specification {
 
 
 
-  def "No messages are displayed when machine is shut down"() {
-    // Tags: priority:1
-
-
-    given:
-    actionwords.theCoffeeMachineIsStarted()
-    when:
-    actionwords.iShutdownTheCoffeeMachine()
-    then:
-    actionwords.messageMessageShouldBeDisplayed("")
-  }
   def messagesAreBasedOnLanguage(language, readyMessage) {
     // Well, sometimes, you just get a coffee.
 
-    // Tags: priority:1
+    // Tags: priority:medium
 
 
     actionwords.iStartTheCoffeeMachineUsingLanguageLang(language)
@@ -34,5 +23,18 @@ class SupportInternationalisationSpec extends Specification {
   def "Messages are based on language - French"() {
     expect:
     messagesAreBasedOnLanguage("fr", "Pret")
+  }
+
+
+  def "No messages are displayed when machine is shut down"() {
+    // Tags: priority:medium
+
+
+    given:
+    actionwords.theCoffeeMachineIsStarted()
+    when:
+    actionwords.iShutdownTheCoffeeMachine()
+    then:
+    actionwords.messageMessageShouldBeDisplayed("")
   }
 }

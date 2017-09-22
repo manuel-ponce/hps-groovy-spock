@@ -6,7 +6,7 @@ class CanBeConfiguredSpec extends Specification {
 
 
   def "Display settings"() {
-    // Tags: priority:1
+    // Tags: priority:medium
 
 
     given:
@@ -17,7 +17,7 @@ class CanBeConfiguredSpec extends Specification {
     actionwords.displayedMessageIs("Settings:\n - 1: water hardness\n - 2: grinder")
   }
   def "Default settings"() {
-    // Tags: priority:0
+    // Tags: priority:high
 
 
     given:

@@ -11,7 +11,7 @@ class WaterSpec extends Specification {
 
 
   def "Message \"Fill water tank\" is displayed after 50 coffees are taken"() {
-    // Tags: priority:0
+    // Tags: priority:high
 
 
     when:
@@ -20,7 +20,7 @@ class WaterSpec extends Specification {
     actionwords.messageMessageShouldBeDisplayed("Fill tank")
   }
   def "It is possible to take 10 coffees after the message \"Fill water tank\" is displayed"() {
-    // Tags: priority:2
+    // Tags: priority:low
 
 
     when:
@@ -33,7 +33,7 @@ class WaterSpec extends Specification {
     actionwords.coffeeShouldNotBeServed()
   }
   def "When the water tank is filled, the message disappears"() {
-    // Tags: priority:0
+    // Tags: priority:high
 
 
     when:

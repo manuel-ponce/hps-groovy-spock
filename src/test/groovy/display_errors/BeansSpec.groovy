@@ -11,7 +11,7 @@ class BeansSpec extends Specification {
 
 
   def "Message \"Fill beans\" is displayed after 38 coffees are taken"() {
-    // Tags: priority:0
+    // Tags: priority:high
 
 
     when:
@@ -20,7 +20,7 @@ class BeansSpec extends Specification {
     actionwords.messageMessageShouldBeDisplayed("Fill beans")
   }
   def "It is possible to take 40 coffees before there is really no more beans"() {
-    // Tags: priority:2
+    // Tags: priority:low
 
 
     when:
@@ -34,7 +34,7 @@ class BeansSpec extends Specification {
     actionwords.messageMessageShouldBeDisplayed("Fill beans")
   }
   def "After adding beans, the message \"Fill beans\" disappears"() {
-    // Tags: priority:0
+    // Tags: priority:high
 
 
     when:
